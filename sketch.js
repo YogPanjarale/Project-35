@@ -83,7 +83,7 @@ function draw() {
   dog.addImage(dogimg1) 
  }
  if(pt>frameCount-delay){
-  image(MilkImage,500,220,100,80);
+  image(MilkImage,500+(frameCount-pt),220,100,80);
  }
 }
 function setToHour(){
@@ -136,4 +136,6 @@ function FeedDog(){
     database.ref('/').update({
       Food:position})
     }
+    
+
     
